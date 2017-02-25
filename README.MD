@@ -24,7 +24,7 @@ Monumental
 
 ## Credits
 
-Sky Scholfield
+Sky Scholfield; Epicodus!
 
 ## License
 
