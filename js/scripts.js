@@ -21,4 +21,10 @@ $(document).ready(function (){
     $("#nothing-selected").slideDown();
   }
   });
+  $("#btn2").click(function(){
+    $("#Beaches").slideUp();
+    $("#Mountains").slideUp();
+    $("#Jungles").slideUp();
+    $("#nothing-selected").slideUp();
+  });
 });
