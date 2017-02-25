@@ -30,127 +30,46 @@
     <h4> Answer the following questions to determine the best place for you to go on vacation!</h4>
     <br>
   </div>
-  <form id="vacation-selector">
-    <div id="question1">
-      <h3>What kind of landscapes are you looking for?</h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="1" checked>
-          Beaches
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="2">
-          Mountains
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="3">
-          Valleys
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="4">
-          The Desert
-        </label>
-      </div>
-    </div>
-    <div id="question2">
-      <h3>.<!--put the first question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="1" checked>
-          <!-- answer one -->
-        </label>
-      </div>
-      <h3><!--put the second question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="2">
-          <!--answer two-->
-        </label>
-      </div>
-      <h3><!--put the third question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="3">
-          <!--answer three-->
-        </label>
-      </div>
-      <h3><!--put the fourth question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="4">
-          <!--answer four-->
-        </label>
-      </div>
-    </div>
-    <div id="question3">
-      <h3>.<!--put the first question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="1" checked>
-          <!-- answer one -->
-        </label>
-      </div>
-      <h3><!--put the second question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="2">
-          <!--answer two-->
-        </label>
-      </div>
-      <h3><!--put the third question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="3">
-          <!--answer three-->
-        </label>
-      </div>
-      <h3><!--put the fourth question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="4">
-          <!--answer four-->
-        </label>
-      </div>
-    </div>
-    <div id="question4">
-      <h3>.<!--put the first question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="1" checked>
-          <!-- answer one -->
-        </label>
-      </div>
-      <h3><!--put the second question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="2">
-          <!--answer two-->
-        </label>
-      </div>
-      <h3><!--put the third question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="3">
-          <!--answer three-->
-        </label>
-      </div>
-      <h3><!--put the fourth question here--></h3>
-      <div class="radio">
-        <label>
-          <input type="radio" name="operator" value="4">
-          <!--answer four-->
-        </label>
-      </div>
-    </div>
+  <div>
+    <form id="vacation-selector" class="questions">
+      <h3>What kind of landscape are you looking for?</h3>
+     <select class="form-control" id="question1">
+       <option value="0">Nothing Selected</option>
+       <option value="1">Beaches</option>
+       <option value="2">Mountains</option>
+       <option value="3">Jungles</option>
+       <option value="4">Deserts</option>
+     </select>
+     <h3>What is your favorite climate?</h3>
+      <select class="form-control" id="question2">
+        <option value="0">Nothing Selected</option>
+        <option value="1">Warm and Dry</option>
+        <option value="2">Temperate</option>
+        <option value="3">Hot and Humid</option>
+        <option value="4">Just plain hot!</option>
+      </select>
+      <h3>On my vacation I want to be wearing ______</h3>
+       <select class="form-control" id="question3">
+         <option value="0">Nothing Selected</option>
+         <option value="1">A swimsuit</option>
+         <option value="2">Hiking Boots</option>
+         <option value="3">An Indian Jones hat</option>
+         <option value="4">Nothing it's too hot out here!</option>
+        </select>
+        <h3>How far would you like to be from civization</h3>
+         <select class="form-control" id="question4">
+           <option value="0">Nothing Selected</option>
+           <option value="1">Dead Center</option>
+           <option value="2">Looking down at it from above</option>
+           <option value="3">Civilization?</option>
+           <option value="4">Civilization?!?</option>
+          </select>
     <br>
-    <button type="submit">Submit Answers</button>
+    <button type="submit" id="btn">Submit Answers</button>
   </form>
-
+  <div id="nothing-selected" class="well">
+    <h4> Opps! You have forgotten to answer one of the questions! Please re-load the page and try again.</h4>
+  </div>
+</div>
 </body>
 </html>
