@@ -1,25 +1,24 @@
 $(document).ready(function (){
   $("form#vacation-selector").submit(function(){
   event.preventDefault();
-  var answer1 = parseInt($("#question1").val());
-  var answer2 = parseInt($("#question2").val());
-  var answer3 = parseInt($("#question3").val());
-  var answer4 = parseInt($("#question4").val());
-  var result = parseInt(answer1 + answer2 + answer3 + answer4);
-  console.log(result);
+  var name = ($("#person1").val());
+  var answer1 = ($("#question1").val());
+  var answer2 = ($("#question2").val());
+  var answer3 = ($("#question3").val());
+  var result = (answer1 + answer2 + answer3);
+  console.log(name);
 
-  if (result <= 4){
-    $("#nothing-selected").slideDown();
-  } else if (result >= 5 && result <=8){
+  $(".nameoutput").text(name);
+
+
+  if (result === "aaa" || result === "aab" || result === "aac" || result === "aba" || result === "aca" || result === "baa" || result === "caa"){
     $("#Beaches").slideDown();
-  } else if (result >= 9 && result <= 12){
+  } else if (result === "bbb" || result === "bba" || result === "bbc" || result === "bab" || result === "bcb" || result === "abb" || result === "cbb"){
     $("#Mountains").slideDown();
-  } else if (results >= 13 && result <= 16){
+  } else if (result === "ccc" || result === "ccb" || result === "cca" || result === "cbc" || result === "cac" || result === "bcc" || result === "acc"){
     $("#Jungles").slideDown();
-  } else if (results >= 13 && result <= 16){
-    $("#Deserts").slideDown();
+  } else {
+    $("#nothing-selected").slideDown();
   }
-
-
   });
 });

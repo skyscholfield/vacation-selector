@@ -32,44 +32,60 @@
   </div>
   <div>
     <form id="vacation-selector" class="questions">
+      <div class="form-group">
+            <label for="person1"><h3>Your name:</h3></label>
+            <input id="person1" class="form-control" type="text">
+          </div>
       <h3>What kind of landscape are you looking for?</h3>
-     <select class="form-control" id="question1">
-       <option value="0">Nothing Selected</option>
-       <option value="1">Beaches</option>
-       <option value="2">Mountains</option>
-       <option value="3">Jungles</option>
-       <option value="4">Deserts</option>
-     </select>
-     <h3>What is your favorite climate?</h3>
+      <select class="form-control" id="question1">
+        <option value="0">Nothing Selected</option>
+        <option value="a">A)Beaches</option>
+        <option value="b">B)Mountains</option>
+        <option value="c">C)Jungles</option>
+      </select>
+      <h3>What is your favorite climate?</h3>
       <select class="form-control" id="question2">
         <option value="0">Nothing Selected</option>
-        <option value="1">Warm and Dry</option>
-        <option value="2">Temperate</option>
-        <option value="3">Hot and Humid</option>
-        <option value="4">Just plain hot!</option>
+        <option value="a">A)Warm and Dry</option>
+        <option value="b">B)Temperate</option>
+        <option value="c">C)Hot and Humid</option>
       </select>
       <h3>On my vacation I want to be wearing ______</h3>
-       <select class="form-control" id="question3">
-         <option value="0">Nothing Selected</option>
-         <option value="1">A swimsuit</option>
-         <option value="2">Hiking Boots</option>
-         <option value="3">An Indian Jones hat</option>
-         <option value="4">Nothing it's too hot out here!</option>
-        </select>
-        <h3>How far would you like to be from civization</h3>
-         <select class="form-control" id="question4">
-           <option value="0">Nothing Selected</option>
-           <option value="1">Dead Center</option>
-           <option value="2">Looking down at it from above</option>
-           <option value="3">Civilization?</option>
-           <option value="4">Civilization?!?</option>
-          </select>
-    <br>
-    <button type="submit" id="btn">Submit Answers</button>
-  </form>
-  <div id="nothing-selected" class="well">
-    <h4> Opps! You have forgotten to answer one of the questions! Please re-load the page and try again.</h4>
+      <select class="form-control" id="question3">
+        <option value="0">Nothing Selected</option>
+        <option value="a">A)A swimsuit</option>
+        <option value="b">B)Hiking Boots</option>
+        <option value="c">C)An Indian Jones hat</option>
+      </select>
+      <h3>How far would you like to be from civization</h3>
+      <select class="form-control" id="question4">
+        <option value="0">Nothing Selected</option>
+        <option value="a">A)Dead Center</option>
+        <option value="b">B)Looking down at it from above</option>
+        <option value="c">C)Civilization?</option>
+      </select>
+      <h3>How much do you like water?</h3>
+      <select class="form-control" id="question4">
+        <option value="0">Nothing Selected</option>
+        <option value="a">A)Loove it</option>
+        <option value="b">B)I could take it or leave it</option>
+        <option value="c">C)I like being fully surrounded by it. At all times</option>
+      </select>
+      <br>
+      <button type="submit" id="btn">Submit Answers</button>
+    </form>
+    <div id="nothing-selected" class="well">
+      <h4> Opps! <span class="nameoutput"></span> you have forgotten to answer one of the questions! Please re-load the page and try again.</h4>
+    </div>
+    <div id="Beaches" class="well">
+      <h4>Congrats <span class="nameoutput"></span>! You are heading to the beach!</h4>
+    </div>
+    <div id="Mountains" class="well">
+      <h4><span class="nameoutput"></span> have fun climbing those mountains you mountineer!</h4>
+    </div>
+    <div id="Jungles" class="well">
+      <h4>Ooo, fun! <span class="nameoutput"></span> you're going to explore the Jungle!</h4>
+    </div>
   </div>
-</div>
 </body>
 </html>
